@@ -16,4 +16,6 @@ noButton.addEventListener("click", () => {
   noButton.style.position = "absolute";
   noButton.style.left = `${randomX}px`;
   noButton.style.top = `${randomY}px`;
+  message.textContent =
+    "Please Please Please...🥺🥺🥺🥺";
 });

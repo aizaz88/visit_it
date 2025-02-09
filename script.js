@@ -10,12 +10,20 @@ yesButton.addEventListener("click", () => {
   yesButton.classList.add("hide");
 });
 
+let count = 0;
 noButton.addEventListener("click", () => {
   const randomX = Math.random() * (window.innerWidth - noButton.offsetWidth);
   const randomY = Math.random() * (window.innerHeight - noButton.offsetHeight);
   noButton.style.position = "absolute";
   noButton.style.left = `${randomX}px`;
   noButton.style.top = `${randomY}px`;
-  message.textContent =
-    "Please Please Please...🥺🥺🥺🥺";
+  count++;
+  if (count < 3) {
+    document.querySelector("h1").textContent =
+      "Please Please Pleas thorri dair bsss.....🥺🥺🥺🥺🥺";
+    //message.textContent = "Please Please Pleas thorri dair bsss.....🥺🥺🥺🥺🥺";
+  } else {
+    document.querySelector("h1").textContent = "Mann jayn naw ab....😭😭😭😭";
+    // message.textContent = "Mann jayn naw ab....🥺🥺🥺🥺🥺";
+  }
 });
